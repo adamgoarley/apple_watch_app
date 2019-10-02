@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+ background: white;
+}
+
+p
+{
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+}
+
+h1, h2, h3
+{
+   font-family: 'Roboto', sans-serif;
+}
