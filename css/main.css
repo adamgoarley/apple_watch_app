@@ -25,6 +25,63 @@ h1, h2, h3
 
 /* ---------------------INDEX PAGE--------------------- */
 
+Mobile Navigation
+#mainNav button
+{
+	background: url(../images/burger.svg) center no-repeat;
+	width: 30px;
+	height: 30px;
+	border: 0px;
+	transition: all 400ms ease;
+	margin-left: auto;
+}
+
+#mainNav button.expanded
+{
+	-webkit-transfrom: rotate(90deg);
+	-ms-transfrom: rotate(90deg);
+	transform: rotate(90deg);
+  background: url(../images/burger_active.svg) center no-repeat;
+	width: 30px;
+	height: 30px;
+}
+
+#mainNav li a
+{
+	display: block;
+	padding: 10px 0 10px 0; /*trbl*/
+	color: #8ea75d;
+	text-align: center;
+  font-family: 'Averia Serif Libre', cursive;
+  color: black;
+}
+
+#mainNav li
+{
+	border-bottom: 1px solid #efefef;
+}
+
+#mainNav li:first-child
+{
+	border-bottom: 1px solid #efefef;
+}
+
+#mainNav li:last-child
+{
+	margin-bottom: 10px;
+}
+
+#burgerCon
+{
+	margin-top: 20px;
+	display: none;
+}
+
+#burgerCon.slideToggle
+{
+	display: block;
+}
+
 .logo
 {
     margin-left: 30px;
@@ -59,11 +116,6 @@ h1, h2, h3
     padding: 0px 15px;
 }
 
-.ourStraps h2
-{
-    font-size: 24px;
-    padding-top: 15px; 
-}
 
 .strap1, .strap2
 {
@@ -75,8 +127,18 @@ h1, h2, h3
     font-size: 18px; 
     font-weight: 700;
 }
+.strap2 h3
+{
+    font-size: 18px; 
+    font-weight: 700;
+}
 
 .strap1 p
+{
+    margin-top: 8px;
+}
+
+.strap2 p
 {
     margin-top: 8px;
 }
@@ -92,3 +154,66 @@ h1, h2, h3
   margin-top: 10px;
   color: black;
 }
+
+@media screen and (min-width: 640px) {
+   
+    .logo
+    {
+      margin-left: 10px;
+      margin-right: 10px;
+      flex: 0 1 220px;
+      order: -1;
+    }
+
+    .ourStraps
+    {
+        display: flex;
+        flex-direction: row;
+    }
+  
+    .box
+    {
+        flex: 1 1 auto;
+        justify-content: space-around;
+      
+    }
+
+    .heroText h2
+    {
+        font-size: 34px;
+        margin: 0px 0px 8px;
+    }
+
+    .heroText p
+    {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+  
+  }
+
+  @media screen and (min-width: 965px){
+
+    .logo img
+    {
+        height: 200px;
+        width: 200px;
+        margin: 15px;
+    }
+
+    .heroText h2
+    {
+        font-size: 54px;
+        margin: 0px 0px 8px;
+    }
+
+    .heroText p
+    {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+
+
+
+  }
