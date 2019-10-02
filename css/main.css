@@ -8,11 +8,87 @@ body
 
 p
 {
-  font-family: 'Open Sans', sans-serif;
+ font-family: 'Nunito Sans', sans-serif;
   color: black;
 }
 
 h1, h2, h3
 {
    font-family: 'Roboto', sans-serif;
+}
+
+.responsive 
+{
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------------------INDEX PAGE--------------------- */
+
+.logo
+{
+    margin-left: 30px;
+}
+.heroImage
+{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.heroText
+{
+    padding: 0px 15px;
+}
+
+.heroText h2
+{
+    font-size: 24px;
+    margin: 0px 0px 8px;
+}
+
+.heroText p
+{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.ourStraps
+{
+    background-color: #e9ecef;
+    margin-top: 30px;
+    padding: 0px 15px;
+}
+
+.ourStraps h2
+{
+    font-size: 24px;
+    padding-top: 15px; 
+}
+
+.strap1, .strap2
+{
+    text-align: center;  
+}
+
+.strap1 h3
+{
+    font-size: 18px; 
+    font-weight: 700;
+}
+
+.strap1 p
+{
+    margin-top: 8px;
+}
+
+.buttonBuy
+{
+  height: 30px;
+  width: 150px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #adb5bd;
+  margin-top: 10px;
+  color: black;
 }

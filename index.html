@@ -6,21 +6,52 @@
   <!--Link to reset first-->
   <link href="css/reset.css" rel="stylesheet" type="text/css">
   <link href="css/main.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<section id="container">
+<div class="container">
 
-  <section>
+  <header>
+
+      <div id="logo" class="logo">
+          <img src="images/logo.svg" alt="Logo" height="100" width="100">
+      </div>
+
+  </header>
+
+   <section class="heroImage">
+      <h2 class="hidden">Hero Image</h2>
+      <img src="images/apple watch .png" alt="watch" class="responsive">
+  </section>
+
+  <section class="heroText">
       <h1 class="hidden">Apple Watch Straps</h1>
       <h2>Apple Watch Straps</h2>
       <p>Our straps are all designed, manufactured, and hand made in our facility. Each strap is made to easily work with series 3, 4 and 5 apple watches</p>
   </section>
 
-  <section>
-    <img src="images/apple watch .png" alt="">
+  <section class="ourStraps">
+    <h1 class="hidden">Our Straps</h1>
+    <h2>Our Straps</h2>
+
+    <div class="box strap1">
+        <img src="images/straps_1.png" alt="Watch Straps" class="responsive">
+        <h3>The Sport Strap</h3>
+        <p>For the gym fanatics. This strap is designed to get you through each and every gym session with ease and comfort.</p>
+        <button class="buttonBuy"><a href="#">Add to cart</a></button>
+    </div>
+
+    <div class="box strap2">
+        <img src="images/straps_2.png" alt="Watch Straps" class="responsive">
+        <h3>The Sport Strap</h3>
+        <p>For the gym fanatics. This strap is designed to get you through each and every gym session with ease and comfort.</p>
+        <button class="buttonBuy"><a href="#">Add to cart</a></button>
+    </div>
+    
   </section>
+
+  
 
 
 
@@ -33,6 +64,6 @@
 <!--Load js at bottom-->
   <script src="js/main.js"></script>
   
-</section>
+</div>
 </body>
 </html>
