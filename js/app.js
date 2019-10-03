@@ -9,7 +9,7 @@ const app = express();
 app.use(express.static('public'));
 
 app.get('/', (reg, res) => {
-	res.sendFile(path.join(__dirname + '/views/index.html'));
+	res.sendFile(path.join(__dirname + '/index.html'));
 })
 
 app.get('/contact', (req, res) => {
