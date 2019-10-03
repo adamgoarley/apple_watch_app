@@ -1,4 +1,4 @@
-console.log("Java Script Linked Up");
+//console.log("Java Script Linked Up");
 
 const express = require('express');
 const path = require('path');
@@ -8,8 +8,8 @@ const app = express();
 
 app.use(express.static('public'));
 
-app.get('/', (reg, res) => {
-	res.sendFile(path.join(__dirname + '/views/index.html'));
+app.get('/', (req, res) => {
+	res.sendFile(path.join(__dirname + '/index.html'));
 })
 
 app.get('/contact', (req, res) => {
